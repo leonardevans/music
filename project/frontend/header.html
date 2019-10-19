@@ -1,0 +1,65 @@
+<header>
+<br>
+<p id="background"><a href="index.php"><b>XFLIX</b></a></p>
+<div class="search">
+<form action="index.php" method="post">
+	<select name="genre">
+		<option value="">Genre</option>
+		<option value="action">Action</option>
+		<option value="anmatn">Animation</option>
+		<option value="Comedy">Comedy</option>
+		<option value="Documentary">Documentary</option>
+		<option value="Drama">Drama</option>
+		<option value="Horror">Horror</option>
+		<option value="Romance">Romance</option>
+		<option value="thril">Thriller</option>
+	</select>
+	<input type="search" name="title" placeholder="search">
+	<button type="submit" name="search"><i class="fa fa-arrow-right"></i></button>
+</form>
+</div>
+
+	<?php if(isset($_SESSION['User']) || isset($_COOKIE['User'])){ 
+		require_once('dbconnection.php');
+		if(isset($_COOKIE['User']) && !isset($_SESSION['User'])){
+
+			$_SESSION['User'] = $_COOKIE['User'];
+		}else if( !isset($_COOKIE['User']) && isset($_SESSION['User']) ){
+			$_SESSION['User'] = $_SESSION['User'];
+		} else if( isset($_COOKIE['User']) && isset($_SESSION['User']) ){
+			$_SESSION['User'] = $_SESSION['User'];
+		} else{
+			header('location:signin.php');
+		}
+		$user=$_SESSION['User'];
+		$query="SELECT * from customers where username='$user'";
+		$customer=mysqli_query($conn, $query);
+		$details=mysqli_fetch_assoc($customer);
+		$customerID = $details['customerID'];
+		
+		?>
+			<div class="signdropdown">
+			<i class="fa fa-user"></i><?php echo $_SESSION['User'];?>
+			<div class="signdcontent">
+			<a href="profile.php">My profile</a><br>
+			<?php echo '<a href="logout.php?logout">Logout</a>'; ?>
+			</div>
+			</div>
+			
+	<?php } else { 
+		header('location:signin.php');
+	}
+	?>
+
+<nav>
+</br>
+<a href="index.php"><i class="fas fa-home">Home</i></a>
+<a href="latest_show_movies.php">latest</a>
+<a href="aboutus.php">About</a>
+<a href="contactUs.php">Contact</a>
+<a href="https://facebook.com" style="color: blue;"><i class="fab fa-facebook"></i></a>
+<a href="https://twitter.com" style="color: skyblue;"> <i class="fab fa-twitter"></i></a>
+</br>
+</br>
+</nav>
+</header>

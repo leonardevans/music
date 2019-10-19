@@ -1,0 +1,289 @@
+body{
+	background-image:url(11176.jpg);
+	text-align:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin:0;
+	padding: 0;
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 15px;
+	background-color:grey;
+}
+body a{
+	text-decoration: none;
+}
+#holder{
+	width:;
+	height:auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+h4{padding: 5px;}
+header{
+	background-color:mintcream;
+	color:black;
+	height:;
+	margin:0px;
+	position:relative;
+}
+div{
+	border-radius: 5px;
+}
+#background{
+	position:absolute;
+	
+	top:0;
+	left:0;
+	z-index:1;
+	overflow:hidden;
+	margin-left:10px;
+	letter-spacing:5px;
+	font-size:20px;
+}
+#background a{color:blue;}
+#signbackground{
+	position:absolute;
+	float:;
+	z-index:1;
+	overflow:hidden;
+	margin-left:10px;
+	letter-spacing:5px;
+	font-size:20px;
+}
+.search{
+	float:left;
+	width:80%;
+}
+.signdropdown{
+	float:left;
+	width:auto;
+	height: auto;
+	padding:10px;
+}
+nav{clear:both;}
+h4{
+	margin:0px;
+	background-color:lightblue;
+}
+h4 a{color:black;}
+h4 a:hover{color:hotpink;}
+
+[class*="movies"]{
+	width:100%;
+	float:left;
+	padding:2px;
+	min-width:;
+}
+.movie_display{
+	width:100%;
+	float:left;
+	padding:px;
+	margin:;
+	border:1px solid black;
+	margin-left:px;
+	margin-left: px;
+	background-color: mintcream;
+}
+@media only screen and (min-width: 600px) {
+	[class*="movies"]{
+		width:50%;
+	}
+	.movie_display{
+		width:50%;
+	}
+}
+@media only screen and (min-width: 992px) {
+	[class*="movies"]{
+		width:25%;
+	}
+	.movie_display{
+		width:25%;
+	}
+}
+
+img{
+	border-radius:5px;
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+button{
+	background-color:mintcream;
+	border:0.5px solid;
+	border-radius:3px;
+}
+input[type=search],input[type=submit],input[type=email],input[type=password],input[type=text],input[type=textarea]{
+	background-color:mintcream;
+	border:0.5px solid;
+	border-radius:3px;
+}
+input[type=submit]:hover{
+	color:hotpink;
+}
+input[type=search]:hover{
+	background-color:black;
+	color:white;
+}
+button:hover{
+	color:hotpink;
+}
+.movies{
+	background-color:mintcream;
+	color:black;
+	border-color:black;
+	border:1px;
+	border-style:solid;
+	padding:15px;
+}
+a{
+	text-decoration:none;
+}
+header a:link{
+	color:black;
+	background-color:;
+	padding:8px;
+}
+header a:visited{
+	background-color:pink;
+	color:purple;
+}
+header a:hover{
+	background-color:;
+	color:blue;
+}
+header a:active{
+	background-color:;
+	color:hotpink;
+}
+footer{
+	background-color:mintcream;
+	color:black;
+}
+footer a{
+	color:black;
+	padding:1px;
+	background-color:;
+}
+#copy{
+	clear:both;
+	text-align:center;
+	width:100%;
+}
+*{
+	box-sizing:border-box;
+}
+.moviespage{
+	width:100%;
+	float:;
+	color:;
+	background-color:mintcream;
+}
+#comments{
+	background-color:mintcream;
+	width:100%;
+	float:;
+	
+}
+@media only screen and (min-width: 600px) {
+	.moviespage{
+		width:60%;
+		float:left;
+	}
+	#comments{
+		width:40%;
+		float:left;
+	}
+}
+#sign{
+	height:auto;
+	background-color: mintcream;
+	padding:50px;
+	border-radius: 5px;
+}
+@media only screen and (min-width: 600px){
+	#sign{
+		width:50%;
+		margin:50px auto;
+	}
+}
+.dropdown{
+	position:relative;
+	display:inline-block;
+	
+}
+.dropdown_content{
+	display:none;
+	position:absolute;
+	background-color:mintcream;
+	min-width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+	overflow:auto;
+	
+}
+.dropdown:hover .dropdown_content{
+	display:block;
+	padding: :10px;
+}
+.signdropdown{
+	position:relative;
+	display:inline-block;	
+}
+.signdcontent{
+	display:none;
+	position:absolute;
+	background-color:mintcream;
+	min-width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+	overflow:auto;
+}
+.signdropdown:hover .signdcontent{
+	display:block;
+		position:absolute;
+	background-color:mintcream;
+	min-width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+	overflow:auto;
+	padding: 10px;
+}
+#profile{
+	text-align: center;
+	background-color: mintcream;
+}
+#profile td,th{
+	width: 150px;
+	padding: 5px;
+}
+.movie_title{
+	height:40px ;
+}
+#search_display{
+	width:100%;
+	float:left;
+	padding:px;
+	margin:;
+	border:1px solid black;
+	margin-left:px;
+	margin-left: px;
+	background-color: mintcream;
+
+}
+#search_title{
+	height: px;
+}
+#search_title a{
+	float: left;
+}
+#empty_search{
+	background-color: mintcream;
+}
+textarea{
+	border:0px 0px 1px 0px ;
+	border: none;
+	outline: none; 
+border-bottom: 1px solid black;
+}

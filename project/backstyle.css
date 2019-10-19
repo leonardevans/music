@@ -1,0 +1,201 @@
+body{
+	background-image:url(11176.jpg);
+	text-align:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-color: grey;
+}
+header{
+	background-color:mintcream;
+	color:black;
+	height:;
+	margin:0px;
+	position:relative;
+}
+#background{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	overflow:hidden;
+	margin-left:5px;
+	letter-spacing:5px;
+	font-size:20px;
+}
+.search{
+	float:left;
+	width:80%;
+}
+.signin{
+	float:left;
+	width:20%;
+}
+nav{clear:both;}
+button{
+	background-color:mintcream;
+	border:0.5px solid;
+	border-radius:3px;
+}
+}
+input[type=search],input[type=submit]{
+	background-color:mintcream;
+	border:0.5px solid;
+	border-radius:3px;
+}
+input[type=submit]:hover{
+	color:hotpink;
+}
+input[type=search]:hover{
+	background-color:black;
+	color:white;
+}
+button:hover{
+	color:hotpink;
+}
+a{
+	text-decoration:none;
+}
+header a{
+	color:black;
+	background-color:;
+	padding:1px;
+}
+header a:hover{
+	background-color:;
+	color:hotpink;
+}
+header a:active{
+	background-color:;
+	color:hotpink;
+}
+*{
+	box-sizing:border-box;
+}
+#sign{
+	height:auto;
+	background-color: mintcream;
+	padding:50px;
+	border-radius: 5px;
+}
+@media only screen and (min-width: 600px){
+	#sign{
+		width:50%;
+		margin:50px auto;
+	}
+}
+#background{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	overflow:hidden;
+	margin-left:10px;
+	letter-spacing:5px;
+	font-size:20px;
+}
+#signbackground{
+	position:absolute;
+	float:;
+	z-index:1;
+	overflow:hidden;
+	margin-left:10px;
+	letter-spacing:5px;
+	font-size:20px;
+}
+h4{
+	margin:0px;
+	background-color:lightblue;
+}
+h4 a{color:black;}
+h4 a:hover{color:hotpink;}
+
+.signdropdown{
+	position:relative;
+	display:inline-block;	
+}
+.signdcontent{
+	display:none;
+	position:absolute;
+	background-color:mintcream;
+	min-width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+	overflow:auto;
+}
+.signdropdown:hover .signdcontent{
+	display:block;
+		position:absolute;
+	background-color:mintcream;
+	min-width:150px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+	overflow:auto;
+	padding: 10px;
+}
+input[type=search],input[type=submit],input[type=email],input[type=password],input[type=text],input[type=textarea]{
+	background-color:mintcream;
+	border:0.5px solid;
+	border-radius:3px;
+}
+input[type=submit]:hover{
+	color:hotpink;
+}
+input[type=search]:hover{
+	background-color:black;
+	color:white;
+}
+button:hover{
+	color:hotpink;
+}
+#add{
+	background-color: mintcream;
+}
+#add {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+#add td,th{
+	width: 150px;
+}
+#customers td,th{
+	width: 150px;
+	padding: 5px;
+}
+#customers{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+#movies{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+#admins{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+#admins td,th{
+	width: 150px;
+	padding: 5px;
+}
+#moviess{
+	margin-right: 30px;
+	margin-left: 30px;
+}
+table{
+	
+	border:1px solid black;
+
+}
+#moviess td,th{
+	width: 150px;
+	padding: 5px;
+}
+tr:hover{
+	background-color: grey;
+}
+tr:nth-child(even){
+	background-color: lightgrey;
+}
+tr:nth-child(even):hover{
+	background-color: grey;
+}

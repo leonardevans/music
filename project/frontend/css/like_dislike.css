@@ -1,0 +1,10 @@
+.fa {
+  font-size: 1.2em;
+}
+.fa-thumbs-down,
+.fa-thumbs-0-down {
+  transform: rotateY(180deg);
+}
+.moviespage i {
+  color: blue;
+}
